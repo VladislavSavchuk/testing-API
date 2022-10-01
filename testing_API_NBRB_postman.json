@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "e45f50da-c6a7-45fe-882e-eb99e3fd24c0",
+		"name": "Курсы валют",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21801761"
+	},
+	"item": [
+		{
+			"name": "All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.nbrb.by/api/exrates/currencies",
+					"protocol": "https",
+					"host": [
+						"www",
+						"nbrb",
+						"by"
+					],
+					"path": [
+						"api",
+						"exrates",
+						"currencies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "onedate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.nbrb.by/api/exrates/rates?ondate=2020-8-9&periodicity=1",
+					"protocol": "https",
+					"host": [
+						"www",
+						"nbrb",
+						"by"
+					],
+					"path": [
+						"api",
+						"exrates",
+						"rates"
+					],
+					"query": [
+						{
+							"key": "ondate",
+							"value": "2020-8-9"
+						},
+						{
+							"key": "periodicity",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dinamics BYN to USD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.nbrb.by/API/ExRates/Rates/Dynamics/145?startDate=2020-1-1&endDate=2022-7-6",
+					"protocol": "https",
+					"host": [
+						"www",
+						"nbrb",
+						"by"
+					],
+					"path": [
+						"API",
+						"ExRates",
+						"Rates",
+						"Dynamics",
+						"145"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2020-1-1"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-7-6"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
